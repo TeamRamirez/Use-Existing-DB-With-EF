@@ -1,0 +1,11 @@
+---EF Project with Existing Database---
+NuGet Packages
+	Install-Package Microsoft.EntityFrameworkCore.Sqlite
+	Install-Package Microsoft.EntityFrameworkCore.Tools
+	
+Open NuGet Package Console and type the follwoing
+	> scaffold-DbContext "Data Source=C:\Projects\ConsoleApp_UseExistingDBWithEF\ConsoleApp1\ConsoleApp1\ExistingEFDatabase.db" Microsoft.EntityFrameworkCore.Sqlite
+	--If MS SQL DB use connection string > "Server=myServerAddress;Database=myDataBase;User Id=myUsername; Password=myPassword;" Microsoft.EntityFrameworkCore.SqlServer
+	--If MS SQL DB use connection string > "Server=myServerAddress;Database=myDataBase;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer
+
+Working Backwards from the DB Creation
